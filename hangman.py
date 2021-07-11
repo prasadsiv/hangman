@@ -11,9 +11,9 @@ for _ in chosen_word:
 
 guess = input("Guess a letter: ").lower()
 
-position = 0 
-for letter in chosen_word:
-    if letter == guess:
+
+for position in range(len(chosen_word)):
+    if chosen_word[position] == guess:
         display[position] = guess
-    position +=1
+
 print(display)
